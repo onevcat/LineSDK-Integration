@@ -1,0 +1,23 @@
+PODS:
+  - LineSDKObjC (5.0.0):
+    - LineSDKSwift (~> 5.0.0)
+  - LineSDKSwift (5.0.0)
+
+DEPENDENCIES:
+  - LineSDKObjC (from `~/Documents/linesdk-ios-swift`)
+
+SPEC REPOS:
+  https://git.linecorp.com/wei-wang/spec.git:
+    - LineSDKSwift
+
+EXTERNAL SOURCES:
+  LineSDKObjC:
+    :path: "~/Documents/linesdk-ios-swift"
+
+SPEC CHECKSUMS:
+  LineSDKObjC: 303a8c461e736ebec06a808e4dd33a98a81a478e
+  LineSDKSwift: e5a711ec6377eb91d626cb718f6be52cb32df2ee
+
+PODFILE CHECKSUM: a50c99788f4ab6da0a854440e56e8bcb8476956b
+
+COCOAPODS: 1.5.3

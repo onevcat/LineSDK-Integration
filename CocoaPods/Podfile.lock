@@ -1,0 +1,16 @@
+PODS:
+  - LineSDKSwift (5.0.0)
+
+DEPENDENCIES:
+  - LineSDKSwift (from `~/Documents/linesdk-ios-swift`)
+
+EXTERNAL SOURCES:
+  LineSDKSwift:
+    :path: "~/Documents/linesdk-ios-swift"
+
+SPEC CHECKSUMS:
+  LineSDKSwift: 0f4e906544722ef188774ed60600a150fc18d6d6
+
+PODFILE CHECKSUM: a9ac494b19d139b60e2fc69c1f0cd473968d8fe3
+
+COCOAPODS: 1.5.3
