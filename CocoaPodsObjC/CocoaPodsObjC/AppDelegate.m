@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-@import LineSDKObjC;
+@import LineSDK;
 
 @interface AppDelegate ()
 

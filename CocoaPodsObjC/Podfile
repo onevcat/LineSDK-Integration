@@ -8,5 +8,5 @@ target 'CocoaPodsObjC' do
   use_frameworks!
 
   # Pods for CocoaPodsObjC
-  pod 'LineSDKObjC', :path => '~/Documents/linesdk-ios-swift'
+  pod 'LineSDKSwift/ObjC', :path => '~/Documents/linesdk-ios-swift'
 end

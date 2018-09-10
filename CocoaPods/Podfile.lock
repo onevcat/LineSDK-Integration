@@ -1,5 +1,7 @@
 PODS:
-  - LineSDKSwift (5.0.0)
+  - LineSDKSwift (5.0.0):
+    - LineSDKSwift/Core (= 5.0.0)
+  - LineSDKSwift/Core (5.0.0)
 
 DEPENDENCIES:
   - LineSDKSwift (from `~/Documents/linesdk-ios-swift`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "~/Documents/linesdk-ios-swift"
 
 SPEC CHECKSUMS:
-  LineSDKSwift: 0f4e906544722ef188774ed60600a150fc18d6d6
+  LineSDKSwift: 24b27d8051a1fcf5c733bbb64741660f32f877e2
 
 PODFILE CHECKSUM: a9ac494b19d139b60e2fc69c1f0cd473968d8fe3
 

@@ -172,14 +172,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPodsObjC/Pods-CocoaPodsObjC-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LineSDKObjC/LineSDKObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/LineSDKSwift/LineSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LineSDKObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LineSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
