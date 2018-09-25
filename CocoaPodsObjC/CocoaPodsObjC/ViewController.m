@@ -25,6 +25,7 @@
      options:nil
      completionHandler:^(LineSDKLoginResult *result, NSError *error) {
          NSLog(@"%@", error);
+         
      }];
 }
 

@@ -18,14 +18,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+
+    NSSet *permission = [NSSet setWithObjects:
+                         [LineSDKLoginPermission profile],
+                         [LineSDKLoginPermission openID],
+                         nil];
     [[LineSDKLoginManager sharedManager]
-     loginWithPermissions:[NSSet setWithObject:LineSDKLoginPermission.profile]
-     inViewController:self
-     options:nil
-     completionHandler:^(LineSDKLoginResult *result, NSError *error) {
-         NSLog(@"%@", error);
-     }];
+        loginWithPermissions:permission
+            inViewController:self
+                     options:nil
+           completionHandler:^(LineSDKLoginResult *result, NSError *error) {
+               if (result) {
+                   NSLog(@"User Name: %@", result.userProfile.displayName);
+               } else {
+                   NSLog(@"Error: %@", error);
+               }
+           }
+     ];
+    
+    [LineSDKAPI getProfileWithCompletionHandler:
+        ^(LineSDKUserProfile * _Nullable profile, NSError * _Nullable error)
+    {
+        if (profile) {
+            NSLog(@"User Name: %@", profile.displayName);
+        } else {
+            NSLog(@"Error: %@", error);
+            
+        }
+    }];
+    
 }
 
 
