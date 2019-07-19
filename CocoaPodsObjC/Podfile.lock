@@ -1,18 +1,18 @@
 PODS:
-  - LineSDKSwift/Core (5.0.0)
-  - LineSDKSwift/ObjC (5.0.0):
+  - LineSDKSwift/Core (5.2.1)
+  - LineSDKSwift/ObjC (5.2.1):
     - LineSDKSwift/Core
 
 DEPENDENCIES:
-  - LineSDKSwift/ObjC (from `~/Documents/linesdk-ios-swift`)
+  - LineSDKSwift/ObjC (~> 5.0)
 
-EXTERNAL SOURCES:
-  LineSDKSwift:
-    :path: "~/Documents/linesdk-ios-swift"
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LineSDKSwift
 
 SPEC CHECKSUMS:
-  LineSDKSwift: 24b27d8051a1fcf5c733bbb64741660f32f877e2
+  LineSDKSwift: 08cbd41a54b6f683cccadc3a0822f2bbb1a69270
 
-PODFILE CHECKSUM: 0b6b86c321697052fa9fc12dd68dd39a0eab4014
+PODFILE CHECKSUM: faeaaf074fdae9648b17d0e634015c0157871245
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.1

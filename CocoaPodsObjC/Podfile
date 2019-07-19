@@ -1,12 +1,14 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-
-source "https://git.linecorp.com/wei-wang/spec.git"
+platform :ios, '10.0'
 
 target 'CocoaPodsObjC' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   use_frameworks!
 
-  # Pods for CocoaPodsObjC
-  pod 'LineSDKSwift/ObjC', :path => '~/Documents/linesdk-ios-swift'
+  # Pods for CocoaPods
+  pod 'LineSDKSwift/ObjC', '~> 5.0'
+
+  target 'CocoaPodsObjCTests' do
+    inherit! :search_paths
+  end
 end
