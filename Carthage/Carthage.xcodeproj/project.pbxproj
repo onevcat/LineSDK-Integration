@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B33340522E1843B00C049BD /* CarthageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33340422E1843B00C049BD /* CarthageTests.swift */; };
 		4BB46468213630FE00F1C170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB46467213630FE00F1C170 /* AppDelegate.swift */; };
 		4BB4646A213630FE00F1C170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB46469213630FE00F1C170 /* ViewController.swift */; };
 		4BB4646D213630FE00F1C170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB4646B213630FE00F1C170 /* Main.storyboard */; };
 		4BB4646F213630FE00F1C170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB4646E213630FE00F1C170 /* Assets.xcassets */; };
 		4BB46472213630FE00F1C170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB46470213630FE00F1C170 /* LaunchScreen.storyboard */; };
 		4BB464BE2136332700F1C170 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB464BD2136332700F1C170 /* LineSDK.framework */; };
+		4BC2E88E22E186F4001F1297 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB464BD2136332700F1C170 /* LineSDK.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4B33340722E1843B00C049BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BB4645C213630FE00F1C170 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BB46463213630FE00F1C170;
+			remoteInfo = Carthage;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4B33340222E1843B00C049BD /* CarthageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B33340422E1843B00C049BD /* CarthageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageTests.swift; sourceTree = "<group>"; };
+		4B33340622E1843B00C049BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB46464213630FE00F1C170 /* Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB46467213630FE00F1C170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB46469213630FE00F1C170 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +42,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4B3333FF22E1843B00C049BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC2E88E22E186F4001F1297 /* LineSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BB46461213630FE00F1C170 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +68,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B33340322E1843B00C049BD /* CarthageTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B33340422E1843B00C049BD /* CarthageTests.swift */,
+				4B33340622E1843B00C049BD /* Info.plist */,
+			);
+			path = CarthageTests;
+			sourceTree = "<group>";
+		};
 		4BB4645B213630FE00F1C170 = {
 			isa = PBXGroup;
 			children = (
 				4BB46466213630FE00F1C170 /* Carthage */,
+				4B33340322E1843B00C049BD /* CarthageTests */,
 				4BB46465213630FE00F1C170 /* Products */,
 				4B3333FC22E182A900C049BD /* Frameworks */,
 			);
@@ -58,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				4BB46464213630FE00F1C170 /* Carthage.app */,
+				4B33340222E1843B00C049BD /* CarthageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +113,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4B33340122E1843B00C049BD /* CarthageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B33340922E1843B00C049BD /* Build configuration list for PBXNativeTarget "CarthageTests" */;
+			buildPhases = (
+				4B3333FE22E1843B00C049BD /* Sources */,
+				4B3333FF22E1843B00C049BD /* Frameworks */,
+				4B33340022E1843B00C049BD /* Resources */,
+				4BC2E88F22E18731001F1297 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B33340822E1843B00C049BD /* PBXTargetDependency */,
+			);
+			name = CarthageTests;
+			productName = CarthageTests;
+			productReference = 4B33340222E1843B00C049BD /* CarthageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4BB46463213630FE00F1C170 /* Carthage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BB46476213630FE00F1C170 /* Build configuration list for PBXNativeTarget "Carthage" */;
@@ -107,6 +160,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "LINE Corp";
 				TargetAttributes = {
+					4B33340122E1843B00C049BD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					4BB46463213630FE00F1C170 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -126,11 +182,19 @@
 			projectRoot = "";
 			targets = (
 				4BB46463213630FE00F1C170 /* Carthage */,
+				4B33340122E1843B00C049BD /* CarthageTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4B33340022E1843B00C049BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BB46462213630FE00F1C170 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,9 +223,36 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		4BC2E88F22E18731001F1297 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/LineSDK.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LineSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4B3333FE22E1843B00C049BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B33340522E1843B00C049BD /* CarthageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BB46460213630FE00F1C170 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +263,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B33340822E1843B00C049BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BB46463213630FE00F1C170 /* Carthage */;
+			targetProxy = 4B33340722E1843B00C049BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4BB4646B213630FE00F1C170 /* Main.storyboard */ = {
@@ -193,6 +292,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4B33340A22E1843B00C049BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CarthageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.CarthageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B33340B22E1843B00C049BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CarthageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.CarthageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4BB46474213630FE00F1C170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -244,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -298,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -317,7 +461,6 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Carthage/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,7 +482,6 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Carthage/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,6 +496,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4B33340922E1843B00C049BD /* Build configuration list for PBXNativeTarget "CarthageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B33340A22E1843B00C049BD /* Debug */,
+				4B33340B22E1843B00C049BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4BB4645F213630FE00F1C170 /* Build configuration list for PBXProject "Carthage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
