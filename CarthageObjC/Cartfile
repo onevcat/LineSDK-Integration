@@ -1,1 +1,1 @@
-git "https://git.linecorp.com/LINE-Client/linesdk-ios-swift.git" "master"
+github "line/line-sdk-ios-swift" ~> 5.0

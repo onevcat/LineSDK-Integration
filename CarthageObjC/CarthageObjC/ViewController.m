@@ -35,18 +35,6 @@
                }
            }
      ];
-    
-    [LineSDKAPI getProfileWithCompletionHandler:
-        ^(LineSDKUserProfile * _Nullable profile, NSError * _Nullable error)
-    {
-        if (profile) {
-            NSLog(@"User Name: %@", profile.displayName);
-        } else {
-            NSLog(@"Error: %@", error);
-            
-        }
-    }];
-    
 }
 
 

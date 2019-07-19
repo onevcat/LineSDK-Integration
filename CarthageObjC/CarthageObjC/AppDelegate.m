@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[LineSDKLoginManager sharedManager] setupWithChannelID:@"44" universalLinkURL:nil];
+    [[LineSDKLoginManager sharedManager] setupWithChannelID:@"123" universalLinkURL:nil];
     return YES;
 }
 

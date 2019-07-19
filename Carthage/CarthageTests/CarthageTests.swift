@@ -19,11 +19,18 @@ class CarthageTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testSDKVersion() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let version = LineSDK.Constant.SDKVersion
+        let version = Constant.SDKVersion
         XCTAssertFalse(version.isEmpty)
+    }
 
+    func testSDKResource() {
+        let button = LoginButton()
+        XCTAssertNotNil(button.buttonText)
+
+        button.buttonText = "Hello"
+        XCTAssertEqual(button.titleLabel?.text, "Hello")
     }
 }
