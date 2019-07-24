@@ -1,0 +1,35 @@
+language: swift
+
+addons:
+  homebrew:
+    packages:
+    - carthage
+
+osx_image:
+- xcode10.2
+- xcode11.0
+
+env:
+- LANE=cocoapods_swift
+- LANE=cocoapods_objc
+- LANE=carthage_swift
+- LANE=carthage_objc
+- LANE=binary_framework_swift
+- LANE=binary_framework_objc
+- LANE=swift_package_manager
+
+matrix:
+  exclude:
+    - osx_image: xcode10.2
+      env: LANE=binary_framework_swift
+    - osx_image: xcode10.2
+      env: LANE=binary_framework_objc
+    - osx_image: xcode10.2
+      env: LANE=swift_package_manager
+cache: bundler
+
+before_install:
+  - gem install bundler -v '2.0.1'
+
+script:
+  - bundle exec fastlane $LANE
