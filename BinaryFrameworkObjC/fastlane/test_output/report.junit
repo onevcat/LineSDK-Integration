@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='BinaryFrameworkObjCTests.xctest' tests='2' failures='0'>
+  <testsuite name='BinaryFrameworkObjCTests' tests='2' failures='0'>
+    <testcase classname='BinaryFrameworkObjCTests' name='testSDKResource' time='0.009'/>
+    <testcase classname='BinaryFrameworkObjCTests' name='testSDKVersion' time='0.000'/>
+  </testsuite>
+</testsuites>

@@ -31,6 +31,20 @@ platform :ios do
         Dir.chdir("../line-sdk-ios-swift") do
             Action.sh("git checkout master")
         end
+        run_lane("BinaryFramework", "test")
+    end
+
+    lane :binary_framework_objc do
+        git_submodule_update
+        Dir.chdir("../line-sdk-ios-swift") do
+            Action.sh("git checkout feature/binary-framework")
+            Action.sh("git pull")
+        end
+        run_lane("line-sdk-ios-swift", "xcframework")
+        Dir.chdir("../line-sdk-ios-swift") do
+            Action.sh("git checkout master")
+        end
+        run_lane("BinaryFrameworkObjC", "test")
     end
 end
 

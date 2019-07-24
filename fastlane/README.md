@@ -46,6 +46,11 @@ fastlane ios swift_package_manager
 fastlane ios binary_framework_swift
 ```
 
+### ios binary_framework_objc
+```
+fastlane ios binary_framework_objc
+```
+
 
 ----
 
