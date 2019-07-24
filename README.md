@@ -2,7 +2,7 @@
 
 ## Locally
 
-This repo verifies the integration for LINE SDK Swift. It checks and ensures the integrating methods below:
+This repo verifies the integration for [LINE SDK Swift](https://github.com/line/line-sdk-ios-swift). It checks and ensures the integrating methods below:
 
 - CocoaPods in Swift project
 - CocoaPods in Objective-C project
