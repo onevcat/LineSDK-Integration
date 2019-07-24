@@ -1,0 +1,14 @@
+default_platform(:ios)
+
+platform :ios do
+    before_all do
+        xcversion(version: "~> 11.0")
+    end
+
+    lane :test do
+        Dir.chdir("..") do
+            Action.sh("xcodebuild -resolvePackageDependencies")
+        end
+        scan
+    end
+end

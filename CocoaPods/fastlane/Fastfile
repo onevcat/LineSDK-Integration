@@ -1,0 +1,12 @@
+default_platform(:ios)
+
+platform :ios do
+    before_all do
+        xcversion(version: "~> 10.1")
+    end
+
+    lane :test do
+        Action.sh("pod update")
+        scan
+    end
+end

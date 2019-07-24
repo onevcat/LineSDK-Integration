@@ -22,7 +22,6 @@ class SwiftPackageManagerTests: XCTestCase {
 
     func testSDKVersion() {
         let version = Constant.SDKVersion
-        print(version)
         XCTAssertFalse(version.isEmpty)
     }
 

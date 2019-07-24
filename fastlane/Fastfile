@@ -1,0 +1,41 @@
+default_platform(:ios)
+
+platform :ios do
+    lane :carthage_swift do
+        run_lane("Carthage", "test")
+    end
+
+    lane :carthage_objc do
+        run_lane("CarthageObjC", "test")
+    end
+
+    lane :cocoapods_swift do
+        run_lane("CocoaPods", "test")
+    end
+
+    lane :cocoapods_objc do
+        run_lane("CocoaPodsObjC", "test")
+    end
+
+    lane :swift_package_manager do
+        run_lane("SwiftPackageManager", "test")
+    end
+
+    lane :binary_framework_swift do
+        git_submodule_update
+        Dir.chdir("../line-sdk-ios-swift") do
+            Action.sh("git checkout feature/binary-framework")
+            Action.sh("git pull")
+        end
+        run_lane("line-sdk-ios-swift", "xcframework")
+        Dir.chdir("../line-sdk-ios-swift") do
+            Action.sh("git checkout master")
+        end
+    end
+end
+
+def run_lane(folder, lane)
+    Dir.chdir("../#{folder}") do
+        Action.sh("bundle exec fastlane #{lane}")
+    end
+end

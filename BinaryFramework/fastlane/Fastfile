@@ -1,0 +1,13 @@
+default_platform(:ios)
+
+platform :ios do
+    lane :verify do
+        run_lane("line-sdk-ios-swift", "")
+    end
+end
+
+def run_lane(folder, lane)
+    Dir.chdir("../#{folder}") do
+        Action.sh("bundle exec fastlane #{lane}")
+    end
+end

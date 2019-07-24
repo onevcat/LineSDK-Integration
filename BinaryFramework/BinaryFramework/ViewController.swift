@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import LineSDK
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+        print(Constant.SDKVersion)
+        LoginManager.shared.setup(channelID: "123", universalLinkURL: nil)
+        LoginManager.shared.login { r in
+            print(r)
+        }
     }
 
 
