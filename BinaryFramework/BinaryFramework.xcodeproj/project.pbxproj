@@ -13,9 +13,8 @@
 		4B0F4AF122E7EAA80069C16C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F4AF022E7EAA80069C16C /* Assets.xcassets */; };
 		4B0F4AF422E7EAA80069C16C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F4AF222E7EAA80069C16C /* LaunchScreen.storyboard */; };
 		4B0F4AFF22E7EAA90069C16C /* BinaryFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F4AFE22E7EAA90069C16C /* BinaryFrameworkTests.swift */; };
-		4BA78B7522E80C1200E84DFC /* LineSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA78B7422E80C1200E84DFC /* LineSDK.xcframework */; };
-		4BA78B7622E80C1200E84DFC /* LineSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA78B7422E80C1200E84DFC /* LineSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BA78B7822E80E2300E84DFC /* LineSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA78B7422E80C1200E84DFC /* LineSDK.xcframework */; };
+		4B8E92132341A65A00F342A5 /* LineSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E92122341A65A00F342A5 /* LineSDK.xcframework */; };
+		4B8E92142341A65A00F342A5 /* LineSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E92122341A65A00F342A5 /* LineSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +28,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4BA78B7722E80C1200E84DFC /* Embed Frameworks */ = {
+		4B8E92152341A65A00F342A5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4BA78B7622E80C1200E84DFC /* LineSDK.xcframework in Embed Frameworks */,
+				4B8E92142341A65A00F342A5 /* LineSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +53,7 @@
 		4B0F4AFA22E7EAA80069C16C /* BinaryFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0F4AFE22E7EAA90069C16C /* BinaryFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryFrameworkTests.swift; sourceTree = "<group>"; };
 		4B0F4B0022E7EAA90069C16C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BA78B7422E80C1200E84DFC /* LineSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LineSDK.xcframework; path = "../line-sdk-ios-swift/build/LineSDK.xcframework"; sourceTree = "<group>"; };
+		4B8E92122341A65A00F342A5 /* LineSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LineSDK.xcframework; path = "../line-sdk-ios-swift/build/LineSDK-/LineSDK/LineSDK.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA78B7522E80C1200E84DFC /* LineSDK.xcframework in Frameworks */,
+				4B8E92132341A65A00F342A5 /* LineSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA78B7822E80E2300E84DFC /* LineSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +120,7 @@
 		4BA78B7322E80C1200E84DFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4BA78B7422E80C1200E84DFC /* LineSDK.xcframework */,
+				4B8E92122341A65A00F342A5 /* LineSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,7 +135,7 @@
 				4B0F4AE022E7EAA70069C16C /* Sources */,
 				4B0F4AE122E7EAA70069C16C /* Frameworks */,
 				4B0F4AE222E7EAA70069C16C /* Resources */,
-				4BA78B7722E80C1200E84DFC /* Embed Frameworks */,
+				4B8E92152341A65A00F342A5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
