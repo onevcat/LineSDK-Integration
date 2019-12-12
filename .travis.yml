@@ -6,25 +6,25 @@ addons:
     - carthage
 
 osx_image:
-- xcode10.2
-- xcode11
+- xcode10.3
+- xcode11.2
 
 env:
 - LANE=cocoapods_swift
 - LANE=cocoapods_objc
 - LANE=carthage_swift
 - LANE=carthage_objc
-# - LANE=binary_framework_swift
-# - LANE=binary_framework_objc
+- LANE=binary_framework_swift
+- LANE=binary_framework_objc
 - LANE=swift_package_manager
 
 matrix:
   exclude:
-    # - osx_image: xcode10.2
-    #   env: LANE=binary_framework_swift
-    # - osx_image: xcode10.2
-    #   env: LANE=binary_framework_objc
-    - osx_image: xcode10.2
+    - osx_image: xcode10.3
+      env: LANE=binary_framework_swift
+    - osx_image: xcode10.3
+      env: LANE=binary_framework_objc
+    - osx_image: xcode10.3
       env: LANE=swift_package_manager
 cache: bundler
 

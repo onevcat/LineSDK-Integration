@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-@import LineSDK;
+@import LineSDKObjC;
 
 @interface ViewController ()
 
