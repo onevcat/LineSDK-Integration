@@ -38,6 +38,6 @@
     XCTAssertNotNil([button buttonTextValue]);
 
     button.buttonTextValue = @"Hello";
-    XCTAssertEqual(button.titleLabel.text, @"Hello");
+    XCTAssertEqual(button.button.titleLabel.text, @"Hello");
 }
 @end
