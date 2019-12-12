@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-@import LineSDK;
+@import LineSDKObjC;
 
 @interface BinaryFrameworkObjCTests : XCTestCase
 
