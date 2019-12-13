@@ -18,9 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [[LineSDKLoginManager sharedManager] setupWithChannelID:@"1234" universalLinkURL:nil];
-    [[LineSDKLoginManager sharedManager] loginWithPermissions:nil inViewController:nil options:nil completionHandler:^(LineSDKLoginResult * r, NSError * e) {
-        NSLog(@"%@", e);
+    [[LineSDKLoginManager sharedManager] setupWithChannelID:@"{CHANNEL_ID}" universalLinkURL:nil];
+    [[LineSDKLoginManager sharedManager] loginWithPermissions:nil inViewController:nil completionHandler:^(LineSDKLoginResult * r, NSError * e) {
+        if (e != nil) {
+            NSLog(@"Error: %@", e);
+        } else {
+            NSLog(@"Login Done: %@", r.accessToken.value);
+        }
     }];
 }
 
