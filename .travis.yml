@@ -7,7 +7,7 @@ addons:
 
 osx_image:
 - xcode10.3
-- xcode11.2
+- xcode11
 
 env:
 - LANE=cocoapods_swift
