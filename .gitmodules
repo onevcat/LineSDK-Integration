@@ -1,3 +1,4 @@
 [submodule "line-sdk-ios-swift"]
 	path = line-sdk-ios-swift
 	url = https://github.com/line/line-sdk-ios-swift.git
+	branch = master
