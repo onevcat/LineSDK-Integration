@@ -22,7 +22,6 @@
     [[LineSDKLoginManager sharedManager]
      loginWithPermissions:[NSSet setWithObject:LineSDKLoginPermission.profile]
      inViewController:self
-     options:nil
      completionHandler:^(LineSDKLoginResult *result, NSError *error) {
          NSLog(@"%@", error);
      }];
