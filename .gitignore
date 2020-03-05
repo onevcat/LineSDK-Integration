@@ -121,5 +121,6 @@ fastlane/test_output
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
+**/vendor/bundle
 
 # End of https://www.gitignore.io/api/xcode,swift,macos,ios
