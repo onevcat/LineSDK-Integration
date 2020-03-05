@@ -17,11 +17,10 @@ class ViewController: UIViewController {
 
         print(Constant.SDKVersion)
         LoginManager.shared.setup(channelID: "123", universalLinkURL: nil)
-        LoginManager.shared.login { r in
+        let permission: Set<LoginPermission> = [.profile, .openID]
+        LoginManager.shared.login(permissions: permission) { r in
             print(r)
         }
     }
-
-
 }
 

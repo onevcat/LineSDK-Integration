@@ -31,6 +31,11 @@
     XCTAssertTrue([array[0] isEqualToString:@"5"]);
 }
 
+- (void)testCanCreatePermission {
+    LineSDKLoginPermission *permission = LineSDKLoginPermission.profile;
+    XCTAssertNotNil(permission);
+}
+
 - (void)testSDKResource {
     LineSDKLoginButton *button = [[LineSDKLoginButton alloc] init];
     XCTAssertNotNil(button);

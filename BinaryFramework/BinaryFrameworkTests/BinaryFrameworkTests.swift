@@ -26,6 +26,11 @@ class BinaryFrameworkTests: XCTestCase {
         XCTAssertEqual(versions[0], "5")
     }
 
+    func testPermission() {
+        let permission = LoginPermission.profile
+        XCTAssertNotNil(permission)
+    }
+
     func testSDKResource() {
         let button = LoginButton()
         XCTAssertNotNil(button)

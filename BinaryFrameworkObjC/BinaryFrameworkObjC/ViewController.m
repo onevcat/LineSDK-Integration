@@ -19,7 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[LineSDKLoginManager sharedManager] setupWithChannelID:@"{CHANNEL_ID}" universalLinkURL:nil];
-    [[LineSDKLoginManager sharedManager] loginWithPermissions:nil inViewController:nil completionHandler:^(LineSDKLoginResult * r, NSError * e) {
+    NSSet *permissions = [NSSet setWithArray:@[LineSDKLoginPermission.profile, LineSDKLoginPermission.openID]];
+    [[LineSDKLoginManager sharedManager] loginWithPermissions:permissions inViewController:nil completionHandler:^(LineSDKLoginResult * r, NSError * e) {
         if (e != nil) {
             NSLog(@"Error: %@", e);
         } else {

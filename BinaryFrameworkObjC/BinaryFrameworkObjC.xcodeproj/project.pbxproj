@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B8C48BA23A1DB7C001B93D1 /* LineSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8C48B823A1DB79001B93D1 /* LineSDK.xcframework */; };
-		4B8C48BB23A1DB7C001B93D1 /* LineSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8C48B823A1DB79001B93D1 /* LineSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4B8E92172341A68400F342A5 /* LineSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E92162341A68400F342A5 /* LineSDKObjC.xcframework */; };
-		4B8E92182341A68400F342A5 /* LineSDKObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E92162341A68400F342A5 /* LineSDKObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4BA78B8722E81F6300E84DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA78B8622E81F6300E84DFC /* AppDelegate.m */; };
 		4BA78B8D22E81F6300E84DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA78B8C22E81F6300E84DFC /* ViewController.m */; };
 		4BA78B9022E81F6300E84DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA78B8E22E81F6300E84DFC /* Main.storyboard */; };
@@ -18,6 +14,8 @@
 		4BA78B9522E81F6400E84DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA78B9322E81F6400E84DFC /* LaunchScreen.storyboard */; };
 		4BA78B9822E81F6400E84DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA78B9722E81F6400E84DFC /* main.m */; };
 		4BA78BA222E81F6400E84DFC /* BinaryFrameworkObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA78BA122E81F6400E84DFC /* BinaryFrameworkObjCTests.m */; };
+		D17A427B24108F3100CE8E21 /* LineSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17A427A24108F3000CE8E21 /* LineSDKObjC.xcframework */; };
+		D17A427C24108F3100CE8E21 /* LineSDKObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D17A427A24108F3000CE8E21 /* LineSDKObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4BA78BB022E81FCD00E84DFC /* Embed Frameworks */ = {
+		D17A427D24108F3100CE8E21 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4B8C48BB23A1DB7C001B93D1 /* LineSDK.xcframework in Embed Frameworks */,
-				4B8E92182341A68400F342A5 /* LineSDKObjC.xcframework in Embed Frameworks */,
+				D17A427C24108F3100CE8E21 /* LineSDKObjC.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +60,7 @@
 		4BA78B9D22E81F6400E84DFC /* BinaryFrameworkObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryFrameworkObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA78BA122E81F6400E84DFC /* BinaryFrameworkObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryFrameworkObjCTests.m; sourceTree = "<group>"; };
 		4BA78BA322E81F6400E84DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17A427A24108F3000CE8E21 /* LineSDKObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LineSDKObjC.xcframework; path = "../line-sdk-ios-swift/build/LineSDKObjCBinary-/LineSDKObjC.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B8C48BA23A1DB7C001B93D1 /* LineSDK.xcframework in Frameworks */,
-				4B8E92172341A68400F342A5 /* LineSDKObjC.xcframework in Frameworks */,
+				D17A427B24108F3100CE8E21 /* LineSDKObjC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +131,7 @@
 		4BA78BAC22E81FCD00E84DFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D17A427A24108F3000CE8E21 /* LineSDKObjC.xcframework */,
 				4B8C48B823A1DB79001B93D1 /* LineSDK.xcframework */,
 				4B8E92162341A68400F342A5 /* LineSDKObjC.xcframework */,
 			);
@@ -150,7 +148,7 @@
 				4BA78B7E22E81F6300E84DFC /* Sources */,
 				4BA78B7F22E81F6300E84DFC /* Frameworks */,
 				4BA78B8022E81F6300E84DFC /* Resources */,
-				4BA78BB022E81FCD00E84DFC /* Embed Frameworks */,
+				D17A427D24108F3100CE8E21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,7 +396,6 @@
 		4BA78BA722E81F6400E84DFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BinaryFrameworkObjC/Info.plist;
@@ -415,7 +412,6 @@
 		4BA78BA822E81F6400E84DFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BinaryFrameworkObjC/Info.plist;
