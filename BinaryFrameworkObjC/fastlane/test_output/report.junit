@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='BinaryFrameworkObjCTests.xctest' tests='2' failures='0'>
-  <testsuite name='BinaryFrameworkObjCTests' tests='2' failures='0'>
-    <testcase classname='BinaryFrameworkObjCTests' name='testSDKResource' time='0.009'/>
-    <testcase classname='BinaryFrameworkObjCTests' name='testSDKVersion' time='0.000'/>
+<testsuites name='BinaryFrameworkObjCTests.xctest' tests='3' failures='0'>
+  <testsuite name='BinaryFrameworkObjCTests' tests='3' failures='0'>
+    <testcase classname='BinaryFrameworkObjCTests' name='testCanCreatePermission' time='0.001'/>
+    <testcase classname='BinaryFrameworkObjCTests' name='testSDKResource' time='0.008'/>
+    <testcase classname='BinaryFrameworkObjCTests' name='testSDKVersion' time='0.001'/>
   </testsuite>
 </testsuites>
