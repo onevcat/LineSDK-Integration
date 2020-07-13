@@ -488,8 +488,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/line/line-sdk-ios-swift.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.0;
+				branch = "feature/spm-resource";
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
