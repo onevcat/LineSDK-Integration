@@ -14,7 +14,6 @@
 		4BF026A022E1A6F9006D56BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF0269E22E1A6F9006D56BF /* LaunchScreen.storyboard */; };
 		4BF026AB22E1A6F9006D56BF /* SwiftPackageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF026AA22E1A6F9006D56BF /* SwiftPackageManagerTests.swift */; };
 		4BF026B722E1A758006D56BF /* LineSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4BF026B622E1A758006D56BF /* LineSDK */; };
-		4BF026BA22E1A788006D56BF /* LineSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4BF026B922E1A788006D56BF /* LineSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF026BA22E1A788006D56BF /* LineSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +146,6 @@
 			);
 			name = SwiftPackageManagerTests;
 			packageProductDependencies = (
-				4BF026B922E1A788006D56BF /* LineSDK */,
 			);
 			productName = SwiftPackageManagerTests;
 			productReference = 4BF026A622E1A6F9006D56BF /* SwiftPackageManagerTests.xctest */;
@@ -496,11 +493,6 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		4BF026B622E1A758006D56BF /* LineSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4BF026B522E1A758006D56BF /* XCRemoteSwiftPackageReference "line-sdk-ios-swift" */;
-			productName = LineSDK;
-		};
-		4BF026B922E1A788006D56BF /* LineSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4BF026B522E1A758006D56BF /* XCRemoteSwiftPackageReference "line-sdk-ios-swift" */;
 			productName = LineSDK;
